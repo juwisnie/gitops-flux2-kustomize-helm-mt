@@ -25,7 +25,7 @@ metadata:
   labels:
     app: sample-app
   name: sample-app
-  namespace: default
+  namespace: hello
 spec:
   selector:
     app: sample-app
