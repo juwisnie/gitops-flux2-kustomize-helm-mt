@@ -4,4 +4,4 @@ resources:
   - ../base/podinfo
   - ../hello-app
 patchesStrategicMerge:
-  - podinfo-values.yaml
+  - podinfo-values.yaml 
