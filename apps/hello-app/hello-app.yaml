@@ -20,7 +20,7 @@ spec:
     spec:
             containers:
               - name: hello-app
-                image: fluxv2.azurecr.io/samples/hello-world:1.0.3 # {"$imagepolicy": "flux-system:hello-policy"}
+                image: juwisnie/hello-app:1.0.3 # {"$imagepolicy": "flux-system:hello-policy"}
                 ports:
                   - containerPort: 80
                 resources:
