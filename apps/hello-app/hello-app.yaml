@@ -20,7 +20,7 @@ spec:
     spec:
             containers:
               - name: hello-app
-                image: juwisnie/hello-app:1.0.7 # {"$imagepolicy": "flux-system:hello-policy"}
+                image: juwisnie/hello-app:1.0.7 # {"$imagepolicy": "cluster-config:hello-policy"}
                 ports:
                   - containerPort: 80
                 resources:
