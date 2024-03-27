@@ -5,5 +5,5 @@ resources:
 images:
 - name: juwisnie/hello-app
   newName: juwisnie/hello-app # {"$imagepolicy": "cluster-config:hello-policy"}
-  newTag: 1.0.7 # {"$imagepolicy": "cluster-config:hello-policy:tag"}
+  newTag: 1.0.8 # {"$imagepolicy": "cluster-config:hello-policy:tag"}
   
