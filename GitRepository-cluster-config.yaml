@@ -1,0 +1,54 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  annotations:
+    reconcile.fluxcd.io/requestedAt: "2024-03-27T13:35:37.5680509-03:00"
+  creationTimestamp: "2024-03-14T14:56:46Z"
+  finalizers:
+  - finalizers.fluxcd.io
+  generation: 1
+  labels:
+    clusterconfig.azure.com/is-managed: "true"
+    clusterconfig.azure.com/name: cluster-config
+    clusterconfig.azure.com/namespace: cluster-config
+    clusterconfig.azure.com/operation-id: dc07fa35-97c3-4667-9856-470fc723a9bb
+  name: cluster-config
+  namespace: cluster-config
+  ownerReferences:
+  - apiVersion: clusterconfig.azure.com/v1alpha1
+    blockOwnerDeletion: true
+    controller: true
+    kind: FluxConfig
+    name: cluster-config
+    uid: 347c9ef9-e49b-4012-ad4a-cb1b645d14cc
+  resourceVersion: "6271385"
+  uid: 2b76a1f3-5304-4e71-b84b-d9fce21b9bcc
+spec:
+  interval: 10m0s
+  ref:
+    branch: main
+  timeout: 10m0s
+  url: https://github.com/juwisnie/gitops-flux2-kustomize-helm-mt
+status:
+  artifact:
+    digest: sha256:4b7d317c2246b108fb8d9ded5515e41ad3c76bce6ad9046f13662e5982616f81
+    lastUpdateTime: "2024-03-27T17:26:05Z"
+    path: gitrepository/cluster-config/cluster-config/241964f6928ae32136003bfc4422002130d9d90f.tar.gz
+    revision: main@sha1:241964f6928ae32136003bfc4422002130d9d90f
+    size: 3145
+    url: http://source-controller.flux-system.svc.cluster.local./gitrepository/cluster-config/cluster-config/241964f6928ae32136003bfc4422002130d9d90f.tar.gz
+  conditions:
+  - lastTransitionTime: "2024-03-27T17:26:05Z"
+    message: stored artifact for revision 'main@sha1:241964f6928ae32136003bfc4422002130d9d90f'
+    observedGeneration: 1
+    reason: Succeeded
+    status: "True"
+    type: Ready
+  - lastTransitionTime: "2024-03-27T17:26:05Z"
+    message: stored artifact for revision 'main@sha1:241964f6928ae32136003bfc4422002130d9d90f'
+    observedGeneration: 1
+    reason: Succeeded
+    status: "True"
+    type: ArtifactInStorage
+  lastHandledReconcileAt: "2024-03-27T13:35:37.5680509-03:00"
+  observedGeneration: 1
