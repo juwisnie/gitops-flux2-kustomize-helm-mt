@@ -4,5 +4,5 @@ resources:
   - hello-app.yaml
 images:
 - name: juwisnie/hello-app
-  newName: juwisnie/hello-app # {"$imagepolicy": "cluster-config:hello-policy"}
+  newName: juwisnie/hello-app # {"$imagepolicy": "cluster-config:hello-policy:name"}
   newTag: 1.0.8 # {"$imagepolicy": "cluster-config:hello-policy:tag"}
