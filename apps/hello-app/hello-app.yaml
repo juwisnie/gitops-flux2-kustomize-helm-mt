@@ -20,7 +20,7 @@ spec:
     spec:
             containers:
               - name: hello-app
-                image: juwisnie/hello-app:1.0.9 # {"$imagepolicy": "cluster-config:hello-policy"}
+                image: juwisnie/hello-app:1.0.9 # {"$imagepolicy": "cluster-config:cluster-config}
                 imagePullPolicy: Always
                 ports:
                   - containerPort: 80
