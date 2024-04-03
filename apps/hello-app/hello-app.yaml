@@ -18,19 +18,19 @@ spec:
       labels:
         app: hello-app
     spec:
-            containers:
-              - name: hello-app
-                image: juwisnie/hello-app:1.0.9 # {"$imagepolicy": "cluster-config:hello"}
-                imagePullPolicy: Always
-                ports:
-                  - containerPort: 80
-                resources:
-                  limits:
-                    cpu: "0.5"
-                    memory: "512Mi"
-                  requests:
-                    cpu: "0.1"
-                    memory: "256Mi"
+      containers:
+        - name: hello-app
+          image: juwisnie/hello-app:1.0.10 # {"$imagepolicy": "cluster-config:hello"}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: "512Mi"
+            requests:
+              cpu: "0.1"
+              memory: "256Mi"
 ---
 apiVersion: v1
 kind: Service
