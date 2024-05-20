@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: cni-configuration
-  namespace: kube-system
+  namespace: cluster-config
 data:
   cni-config: |-
     {
