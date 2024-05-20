@@ -14,7 +14,7 @@ spec:
         name: cilium
         namespace: cluster-config
       version: "1.15.5"
-  interval: 0h5m0s
+  interval: 0h3m0s
   install:
     remediation:
       retries: 3
