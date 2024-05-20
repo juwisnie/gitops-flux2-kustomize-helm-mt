@@ -4,7 +4,7 @@ metadata:
   name: cilium
   namespace: cluster-config
 spec:
-  targetNamespace: cilum
+  targetNamespace: kube-system
   releaseName: cilium
   chart:
     spec:
