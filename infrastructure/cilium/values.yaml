@@ -10,7 +10,11 @@ endpointRoutes:
   enabled: true
 nodeinit: 
   enabled: true
-relay:
+hubble:
   enabled: true
-ui:
-  enabled: true
+  metrics:
+    enabled: true
+  ui:
+    enabled: true
+  relay:
+    enabled: true
