@@ -5,7 +5,7 @@ resources:
   - chaining.yaml
 configMapGenerator:
   - name: cilium-values
-    namespace: kube-system
+    namespace: cluster-config
     files:
       - values.yaml=values.yaml
 configurations:
