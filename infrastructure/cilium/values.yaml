@@ -1,0 +1,12 @@
+# Default values
+# https://github.com/cilium/cilium/blob/v1.15.1/install/kubernetes/cilium/values.yaml
+cni:
+  chainingMode: generic-veth
+  customConf: true
+  configMap: cni-configuration
+routingMode: native
+enableIPv4Masquerade: false
+endpointRoutes:
+  enabled: true
+nodeinit: 
+  enabled: true
