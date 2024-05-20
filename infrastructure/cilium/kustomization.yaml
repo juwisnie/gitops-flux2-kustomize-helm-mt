@@ -3,3 +3,10 @@ kind: Kustomization
 resources:
   - release.yaml
   - chaining.yaml
+configMapGenerator:
+  - name: cilium-values
+    namespace: cluster-config
+    files:
+      - values.yaml=values.yaml
+configurations:
+  - kustomizeconfig.yaml
