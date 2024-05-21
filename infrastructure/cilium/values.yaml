@@ -10,3 +10,8 @@ endpointRoutes:
   enabled: true
 nodeinit: 
   enabled: true
+hubble:
+  relay:
+    enabled: true
+  ui:
+    enabled: true
